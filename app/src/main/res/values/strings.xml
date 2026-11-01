@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">KnightsArmor</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Knights\nArmor</string>
+    <string name="welcome_tagline">Campus awareness, powered by Knights.</string>
+    <string name="login">Login</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Onboarding</string>
+    <string name="onboarding_description">Knights Armor is a live campus map where UCF students share what is happening around them.\n\nDrop a pin to report an event, a safety alert, or a water issue, and see what other Knights have reported nearby.\n\nTo do this, the app uses:\n•  Your location, to place pins on the map\n•  Your camera or photos, if you attach an image to a report\n•  Your UCF login, to verify you are a student</string>
+    <string name="acknowledge">Acknowledge</string>
+    <string name="continue_label">Continue</string>
+
+    <!-- Home / bottom bar -->
+    <string name="cd_filter">Filter categories</string>
+    <string name="cd_map">Map</string>
+    <string name="cd_report">New report</string>
+    <string name="cd_profile">Profile</string>
+    <string name="cd_pin">Report pin</string>
+
+    <!-- Categories -->
+    <string name="categories">Categories</string>
+    <string name="category_events">Events</string>
+    <string name="category_alerts">Alerts</string>
+    <string name="category_water">Water</string>
+    <string name="cd_close">Close</string>
+
+    <!-- Report -->
+    <string name="add_photo">Add a photo (optional)</string>
+    <string name="hint_pin_title">Pin Title</string>
+    <string name="hint_pin_description">Pin description</string>
+    <string name="cd_cancel">Cancel report</string>
+    <string name="cd_submit">Post report</string>
+
+    <!-- Pin detail -->
+    <string name="pin_title">Pin Title</string>
+    <string name="pin_description">Description of what the pin is about</string>
+
+    <!-- Profile -->
+    <string name="username">Username</string>
+    <string name="verified_student">Verified UCF Student</string>
+    <string name="past_reports">Past Reports</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_avatar">Profile photo</string>
+    <string name="cd_report_photo">Report photo</string>
+</resources>

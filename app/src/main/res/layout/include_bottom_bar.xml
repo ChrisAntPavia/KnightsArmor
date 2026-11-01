@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared bottom bar: map, new report (camera), profile -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/bg_bottom_bar"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/nav_map"
+        style="@style/KA.NavButton"
+        android:contentDescription="@string/cd_map"
+        android:src="@drawable/ic_map" />
+
+    <View
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/ka_outline" />
+
+    <ImageButton
+        android:id="@+id/nav_report"
+        style="@style/KA.NavButton"
+        android:contentDescription="@string/cd_report"
+        android:src="@drawable/ic_camera" />
+
+    <View
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/ka_outline" />
+
+    <ImageButton
+        android:id="@+id/nav_profile"
+        style="@style/KA.NavButton"
+        android:contentDescription="@string/cd_profile"
+        android:src="@drawable/ic_profile" />
+
+</LinearLayout>

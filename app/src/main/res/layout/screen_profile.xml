@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screen 7: Profile - username, profile photo with UCF verified badge, and a grid of past reports -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ka_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_outline_rounded"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_settings"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_settings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/username"
+            android:textColor="@color/ka_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_settings"
+            app:layout_constraintStart_toEndOf="@id/btn_settings"
+            app:layout_constraintTop_toTopOf="@id/btn_settings" />
+
+        <ImageView
+            android:id="@+id/profile_avatar"
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_avatar"
+            android:contentDescription="@string/cd_avatar"
+            android:padding="8dp"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_settings" />
+
+        <ImageView
+            android:id="@+id/profile_verified"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_avatar"
+            android:contentDescription="@string/verified_student"
+            android:src="@drawable/ic_verified"
+            app:layout_constraintBottom_toBottomOf="@id/profile_avatar"
+            app:layout_constraintEnd_toEndOf="@id/profile_avatar"
+            app:tint="@color/ka_gold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/verified_student"
+            android:textColor="@color/ka_gold"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_avatar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/past_reports_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/past_reports"
+        android:textColor="@color/ka_text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_header" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/past_reports_label">
+
+        <GridLayout
+            android:id="@+id/past_reports_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_outline_square"
+                android:contentDescription="@string/cd_report_photo"
+                android:padding="28dp"
+                android:src="@drawable/ic_image" />
+        </GridLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/include_bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
